@@ -85,7 +85,7 @@ NDisc.r <- intersect(Nfem.r, NInit.r)
 #Define HSM function
 
 ##HSMfx1 <- function(z) {
-##  					fnull.v <- lmer(as.numeric(x)~1 + as.numeric(TwoSetRED.df$ageDNAextraction[Nd2.r]) + as.factor(TwoSetRED.df$CLOSEST_SMOKE_DNA[Nd2.r]) + Batch.v[Nd2.r] + as.numeric(TwoSetRdBs.df$lymphocytes)[Nd2.r] + as.numeric(TwoSetRdBs.df$monocytes)[Nd2.r] + as.numeric(TwoSetRdBs.df$neutrophils)[Nd2.r] + as.numeric(TwoSetRdBs.df$eosinophils)[Nd2.r] + (1|as.factor(TwoSetRdBs.df$KCLfam[Nd2.r])) + (1|as.factor(Zygosity_MZ0DZ1[Nd2.r])),REML=FALSE)
+##                      fnull.v <- lmer(as.numeric(x)~1 + as.numeric(TwoSetRED.df$ageDNAextraction[Nd2.r]) + as.factor(TwoSetRED.df$CLOSEST_SMOKE_DNA[Nd2.r]) + Batch.v[Nd2.r] + as.numeric(TwoSetRdBs.df$lymphocytes)[Nd2.r] + as.numeric(TwoSetRdBs.df$monocytes)[Nd2.r] + as.numeric(TwoSetRdBs.df$neutrophils)[Nd2.r] + as.numeric(TwoSetRdBs.df$eosinophils)[Nd2.r] + (1|as.factor(TwoSetRdBs.df$KCLfam[Nd2.r])) + (1|as.factor(Zygosity_MZ0DZ1[Nd2.r])),REML=FALSE)
 ##                      fit.v   <- lmer(as.numeric(x)~1 + as.numeric(TSGenoS.df[, SNPnow.v][Nd2.r]) + as.numeric(TwoSetRED.df$ageDNAextraction[Nd2.r]) + as.factor(TwoSetRED.df$CLOSEST_SMOKE_DNA[Nd2.r]) + Batch.v[Nd2.r] + as.numeric(TwoSetRdBs.df$lymphocytes)[Nd2.r] + as.numeric(TwoSetRdBs.df$monocytes)[Nd2.r] + as.numeric(TwoSetRdBs.df$neutrophils)[Nd2.r] + as.numeric(TwoSetRdBs.df$eosinophils)[Nd2.r] + (1|as.factor(TwoSetRdBs.df$KCLfam[Nd2.r])) + (1|as.factor(Zygosity_MZ0DZ1[Nd2.r])),REML=FALSE)
 ##                      av.v = anova(fit.v, fnull.v)
 ##                      s = summary(fit.v)
